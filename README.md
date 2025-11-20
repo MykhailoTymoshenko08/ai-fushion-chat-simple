@@ -1,0 +1,2 @@
+# ai-fushion-chat-simple
+simple frontend  AINiggersPampers228KirpichnayaStenaSVOBidenBanderaZigmaSosalaMamaZOV 
