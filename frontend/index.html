@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-AI Chat Platform</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>AI Chats</h2>
+                <button id="newChatBtn" class="btn-primary">New Chat</button>
+            </div>
+            <div class="mode-selector">
+                <label for="responseMode">Response Mode:</label>
+                <select id="responseMode">
+                    <option value="aggregate">Aggregated Response</option>
+                    <option value="multiple">All Models Separate</option>
+                    <option value="single">Single Model</option>
+                </select>
+                <select id="singleModelSelect" style="display: none;">
+                    <option value="openai">OpenAI</option>
+                    <option value="groq">Groq</option>
+                    <option value="deepseek">DeepSeek</option>
+                    <option value="gemini">Gemini</option>
+                </select>
+            </div>
+            <div class="chat-history" id="chatHistory">
+                <!-- Chat history will be populated here -->
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <h3 id="currentChatTitle">New Chat</h3>
+                <div class="theme-toggle">
+                    <button id="themeToggle">🌙</button>
+                </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be displayed here -->
+            </div>
+
+            <!-- Provider Streams -->
+            <div class="provider-streams" id="providerStreams">
+                <!-- Provider responses will be streamed here -->
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <form id="messageForm" class="message-form">
+                    <div class="input-container">
+                        <input 
+                            type="text" 
+                            id="messageInput" 
+                            placeholder="Type your message..." 
+                            autocomplete="off"
+                        >
+                        <button type="submit" id="sendBtn" class="btn-send">Send</button>
+                    </div>
+                </form>
+                <div class="rating-buttons" id="ratingButtons" style="display: none;">
+                    <span>Rate this response:</span>
+                    <button class="btn-like" data-score="1">👍</button>
+                    <button class="btn-dislike" data-score="-1">👎</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/ui.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

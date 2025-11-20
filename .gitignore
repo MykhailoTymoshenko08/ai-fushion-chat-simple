@@ -1,0 +1,16 @@
+# Віртуальні середовища
+venv/
+.venv/
+
+# Кеші та тимчасові файли
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE файли
+.vscode/
+.idea/
+
+# Системні файли
+.DS_Store
+Thumbs.db

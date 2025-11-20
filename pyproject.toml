@@ -1,0 +1,8 @@
+[project]
+name = "ai-chat-platform"
+version = "1.0.0"
+description = "Multi-AI Chat Platform with Response Synthesis"
+requires-python = ">=3.8"
+
+[build-system]
+requires = ["setuptools", "wheel"]
