@@ -1,6 +1,6 @@
 # Multi-AI Chat Platform
 
-A production-ready chat platform that queries multiple AI models (Groq, DeepSeek, OpenAI, Gemini) in parallel, analyzes their responses, and synthesizes a high-quality final answer.
+A production-ready chat platform that queries multiple AI models in parallel, analyzes their responses, and synthesizes a high-quality final answer.
 
 ## Features
 
